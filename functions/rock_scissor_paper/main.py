@@ -15,7 +15,7 @@ def lambda_handler(event, context):
 
     user_choice = event["queryStringParameters"]["user_choice"]
     
-    computer_choice =random.choice(["rock","scissor","paper"])
+    computer_choice =random.choice(["rock","scissors","paper"])
     if user_choice == computer_choice:
         result = "It's a tie!"
     elif (user_choice == "rock" and computer_choice == "scissors") or \
