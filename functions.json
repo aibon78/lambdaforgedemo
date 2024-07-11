@@ -28,5 +28,20 @@
             }
         ],
         "invocations": []
+    },
+    {
+        "name": "Rock-scissor-paper",
+        "path": "./functions/rock_scissor_paper",
+        "description": "rock scissor paper",
+        "timeout": 60,
+        "triggers": [
+            {
+                "service": "api_gateway",
+                "trigger": "/rock-scissor-paper",
+                "method": "GET",
+                "public": true
+            }
+        ],
+        "invocations": []
     }
 ]
