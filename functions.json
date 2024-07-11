@@ -15,7 +15,7 @@
         "invocations": []
     },
     {
-        "name": "HelloAndre",
+        "name": "Hellogui",
         "path": "./functions/hello_andre",
         "description": "A simple hello world",
         "timeout": 60,

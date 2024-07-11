@@ -1,3 +1,5 @@
+from functions.rock-scissor-paper.config import Rock-scissor-paperConfig
+from functions.hello_andre.config import HelloAndreConfig
 
 from functions.hello_world.config import HelloWorldConfig
 from docs.config import DocsConfig
@@ -21,3 +23,9 @@ class LambdaStack(Stack):
 
        
        
+
+        # HelloAndre
+        HelloAndreConfig(self.services)
+
+        # Rock-scissor-paper
+        Rock-scissor-paperConfig(self.services)
