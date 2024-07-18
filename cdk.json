@@ -48,13 +48,13 @@
     "bucket": "andrebucket",
     "base_url": "",
     "dev": {
-      "arns": {}
+      "arns": {"Guess_the_number":"arn:aws:dynamodb:us-east-2:381492254794:table/Guess_the_number" }
     },
     "staging": {
-      "arns": {}
+      "arns": {"Guess_the_number":"arn:aws:dynamodb:us-east-2:381492254794:table/Guess_the_number"}
     },
     "prod": {
-      "arns": {}
+      "arns": {"Guess_the_number":"arn:aws:dynamodb:us-east-2:381492254794:table/Guess_the_number"}
     }
   }
 }

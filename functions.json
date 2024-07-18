@@ -1,13 +1,13 @@
 [
     {
-        "name": "HelloWorld",
-        "path": "./functions/hello_world",
-        "description": "A simple hello world",
+        "name": "MakeGuess",
+        "path": "./functions/guess_the_number/make_guess",
+        "description": "Make a guess for a particular game",
         "timeout": 60,
         "triggers": [
             {
                 "service": "api_gateway",
-                "trigger": "/hello_world",
+                "trigger": "/games/{game_id}",
                 "method": "GET",
                 "public": true
             }
@@ -15,33 +15,23 @@
         "invocations": []
     },
     {
-        "name": "Hellogui",
-        "path": "./functions/hello_andre",
-        "description": "A simple hello world",
+        "name": "CreateGame",
+        "path": "./functions/guess_the_number/create_game",
+        "description": "Creates a new guess the number game",
         "timeout": 60,
         "triggers": [
             {
                 "service": "api_gateway",
-                "trigger": "/hello_andre",
-                "method": "GET",
+                "trigger": "/games",
+                "method": "POST",
                 "public": true
             }
         ],
-        "invocations": []
-    },
-    {
-        "name": "Rock-scissor-paper",
-        "path": "./functions/rock_scissor_paper",
-        "description": "rock scissor paper",
-        "timeout": 60,
-        "triggers": [
+        "invocations": [
             {
-                "service": "api_gateway",
-                "trigger": "/rock-scissor-paper",
-                "method": "GET",
-                "public": true
+                "service": "dynamodb",
+                "resource": "guess_the_number"
             }
-        ],
-        "invocations": []
+        ]
     }
 ]

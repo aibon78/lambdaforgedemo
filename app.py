@@ -6,7 +6,7 @@ from infra.stacks.staging_stack import StagingStack
 app = cdk.App()
 
 DevStack(app)
-StagingStack(app)
-ProdStack(app)
+#StagingStack(app)
+#ProdStack(app)
 
 app.synth()

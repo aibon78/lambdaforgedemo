@@ -12,7 +12,7 @@ class Output:
 
 
 def lambda_handler(event, context):
-
+    
     user_choice = event["queryStringParameters"]["user_choice"]
     
     computer_choice =random.choice(["rock","scissors","paper"])
